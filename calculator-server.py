@@ -16,7 +16,7 @@ def subtract(num1: int, num2: int) -> int:
     """Subract two numbers and return the result""" 
     return num1 - num2
 
-# Register the multiple function
+# Register the multiply function
 @mcp.tool()
 def multiply(num1: int, num2: int) -> int:
     """ Multiple two numbers and return the result"""
@@ -69,7 +69,7 @@ def calculator_prompt(num1: float, num2: float, operation: str)-> str:
         return f"The result of adding {num1} and {num2} is {result}"
     elif operation == "subtract":
         return f"The result of subtracting {num1} and {num2} is {subtract(num1, num2)}"
-    elif operation == "multiple":
+    elif operation == "multiply":
         return f"The result of multiplying {num1} and {num2} is {multiply(num1, num2)}"
     elif operation == "divide":
         try:
