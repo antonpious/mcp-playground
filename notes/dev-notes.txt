@@ -1,0 +1,13 @@
+Errors thrown when starting the server using MCP
+
+mcp dev calculator-server.py
+
+The server object /Users/anton/Documents/projects/pythonprojects/mcp-playground/calculator-server.py:mcp is of type <class 'fastmcp.server.server.FastMCP'> (expecting <class 'mcp.server.fastmcp.server.FastMCP'>).
+Ignoring object '/Users/anton/Documents/projects/pythonprojects/mcp-playground/calculator-server.py:mcp' as it's not a valid server object
+No server object found in /Users/anton/Documents/projects/pythonprojects/mcp-playground/calculator-server.py. Please either:
+1. Use a standard variable name (mcp, server, or app)
+2. Specify the object name with file:object syntax
+3. If the server creates the FastMCP object within main()    or another function, refactor the FastMCP object to be a    global variable named mcp, server, or app.
+
+
+fastmcp dev calculator-server.py:mcp

@@ -31,3 +31,23 @@ Activate the virtual environment
 
 ### Run the client in a separate terminal
 `uv run mcp-client.py`
+
+### To open the MCP inspector
+first run the MCP Server  
+`uv run calculator-server.py`  
+
+
+Then run the inspector    
+
+`fastmcp dev calculator-server.py`
+
+use the inspector URL with the security token in the browser.
+
+`  http://localhost:6274/?MCP_PROXY_AUTH_TOKEN=234d31f8df1bdebf0c879285724860d39791afdfd651d7296be8d0d233ef7e11`
+
+Select the MCP server for http transport  
+enter the MCP server details
+`http://localhost:8002/mcp  `
+
+Now you can interact with the prompts, tools and resources.  
+
